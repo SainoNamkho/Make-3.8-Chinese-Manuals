@@ -12,6 +12,15 @@
 \usepackage{indentfirst}
 \usepackage{pifont}
 
+\hypersetup{colorlinks}
+            % linkcolor=blue,
+            % anchorcolor=blue,
+            % citecolor=green}
+\let\savedsection=\section
+\def\section#1{%
+    \savedsection{#1}\label{sec:\thesection}}
+% \includeonly{chapter/2,chapter/3}
+
 %\raggedbottom
 %\linespread{1.3}
 
